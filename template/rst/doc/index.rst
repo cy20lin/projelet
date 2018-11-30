@@ -3,18 +3,22 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to rst's documentation!
-===============================
+Sphinx documentation template
+=============================
+
+This is the example for sphinx documentation.
+
+Sphinx is a good tool that could generate various types of
+documents using RestructuedText as it markup language.
+
+Turn plain text into your documentation.
+
+Table of contents
+-----------------
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
+   ./installation
+   ./test
 
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
