@@ -1,0 +1,440 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Restructued Text Testing &mdash; rst TODO documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Installation" href="installation.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> rst
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Restructued Text Testing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#generic-code-block">Generic Code Block</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#python">Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#c-c">C/C++</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rust">Rust</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#latex">LaTeX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#make">Make</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#shell">Shell</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lisp">Lisp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#emacs-lisp">Emacs Lisp</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">rst</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Restructued Text Testing</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/test.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="restructued-text-testing">
+<h1>Restructued Text Testing<a class="headerlink" href="#restructued-text-testing" title="Permalink to this headline">¶</a></h1>
+<p>This is a document that is taken from emacs/mmm-mode.</p>
+<p>Originally used to test the functionality for
+handling various programming languages of <em>mmm-mode</em>
+and <em>poly-mode</em> in <em>Emacs</em>.</p>
+<div class="section" id="generic-code-block">
+<h2>Generic Code Block<a class="headerlink" href="#generic-code-block" title="Permalink to this headline">¶</a></h2>
+<p>This is a generic code-block. It should not receive special highlights.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="k">class</span> <span class="nc">python_test</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="k">pass</span>
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="k">pass</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">main</span><span class="p">())</span>
+</pre></div>
+</div>
+<p>This is a generic code-block without language specifiers.</p>
+</div>
+<div class="section" id="python">
+<h2>Python<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
+
+
+<span class="k">class</span> <span class="nc">python_test</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="k">pass</span>
+
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">(</span><span class="n">ab</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;This does wierd things.</span>
+
+<span class="sd">    .. Keyword Arguments:</span>
+<span class="sd">    :param ab: Test.</span>
+
+<span class="sd">    .. Returns:</span>
+<span class="sd">    :return: The number 42.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="mi">42</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">main</span><span class="p">())</span>
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p>The following code works on Python 2, but not Python 3:</p>
+<div class="literal-block-wrapper docutils container" id="id1">
+<div class="code-block-caption"><span class="caption-text">Python Warning Test</span><a class="headerlink" href="#id1" title="Permalink to this code">¶</a></div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">print</span> <span class="s2">&quot;Hello world&quot;</span>
+<span class="k">assert</span> <span class="mi">5</span> <span class="o">/</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">2</span>
+</pre></div>
+</div>
+</div>
+<p class="last">In Python 3, you need to add parentheses around <code class="docutils literal notranslate"><span class="pre">&quot;Hello</span> <span class="pre">world&quot;</span></code>, and the division call
+will return 2.5 instead of 2.</p>
+</div>
+</div>
+<div class="section" id="c-c">
+<h2>C/C++<a class="headerlink" href="#c-c" title="Permalink to this headline">¶</a></h2>
+<div class="code c highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#include &lt;stdio.h&gt;</span>
+
+<span class="n">struct</span> <span class="n">test</span>
+<span class="p">{</span>
+    <span class="nb">int</span> <span class="n">dummy</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nb">int</span> <span class="n">main</span><span class="p">(</span><span class="n">char</span> <span class="n">argc</span><span class="p">,</span> <span class="n">char</span> <span class="o">*</span><span class="n">argv</span><span class="p">[])</span>
+<span class="p">{</span>
+    <span class="p">(</span><span class="n">void</span><span class="p">)</span> <span class="n">argc</span><span class="p">;</span>
+    <span class="p">(</span><span class="n">void</span><span class="p">)</span> <span class="n">argv</span><span class="p">;</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s2">&quot;Hello, world!</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">);</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="rust">
+<h2>Rust<a class="headerlink" href="#rust" title="Permalink to this headline">¶</a></h2>
+<p>How does it handle relatively new languages?</p>
+<div class="literal-block-wrapper docutils container" id="id2">
+<div class="code-block-caption"><span class="caption-text">Rust</span><a class="headerlink" href="#id2" title="Permalink to this code">¶</a></div>
+<div class="highlight-rust notranslate"><div class="highlight"><pre><span></span><span class="w"> </span><span class="k">use</span><span class="w"> </span><span class="n">std</span>::<span class="n">fmt</span><span class="p">;</span><span class="w"></span>
+
+<span class="w"> </span><span class="k">fn</span> <span class="nf">main</span><span class="p">()</span><span class="w"></span>
+<span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">     </span><span class="n">println</span><span class="o">!</span><span class="p">(</span><span class="s">&quot;Hello, world!&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w"> </span><span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="latex">
+<h2>LaTeX<a class="headerlink" href="#latex" title="Permalink to this headline">¶</a></h2>
+<div class="literal-block-wrapper docutils container" id="id3">
+<div class="code-block-caption"><span class="caption-text">Latex</span><a class="headerlink" href="#id3" title="Permalink to this code">¶</a></div>
+<div class="highlight-LaTeX notranslate"><div class="highlight"><pre><span></span> <span class="k">\documentclass</span><span class="nb">{</span>beamer<span class="nb">}</span>
+ <span class="k">\usepackage</span><span class="nb">{</span>etex<span class="nb">}</span>
+ <span class="k">\usepackage</span><span class="na">[latin1]</span><span class="nb">{</span>inputenc<span class="nb">}</span>
+ <span class="k">\usepackage</span><span class="nb">{</span>mathtools<span class="nb">}</span>
+
+ <span class="k">\title</span><span class="na">[]</span><span class="nb">{</span>Video Modeling<span class="nb">}</span>
+ <span class="k">\subtitle</span><span class="nb">{}</span>
+ <span class="k">\author</span><span class="nb">{</span>Gustaf Waldemarson<span class="nb">}</span>
+ <span class="k">\institute</span><span class="nb">{</span>ARM Sweden AB<span class="nb">}</span>
+ <span class="k">\date</span><span class="nb">{</span><span class="k">\today</span><span class="nb">}</span>
+ <span class="k">\subject</span><span class="nb">{</span>Computer Science<span class="nb">}</span>
+
+ <span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+
+ <span class="k">\begin</span><span class="nb">{</span>frame<span class="nb">}</span>
+   <span class="k">\titlepage</span>
+   <span class="k">\begin</span><span class="nb">{</span>columns<span class="nb">}</span>
+     <span class="k">\begin</span><span class="nb">{</span>column<span class="nb">}{</span>0.4<span class="k">\textwidth</span><span class="nb">}</span>
+       <span class="k">\begin</span><span class="nb">{</span>figure<span class="nb">}</span>
+         <span class="c">% \includegraphics[width=0.5\textwidth]{lund_university_seal}</span>
+       <span class="k">\end</span><span class="nb">{</span>figure<span class="nb">}</span>
+     <span class="k">\end</span><span class="nb">{</span>column<span class="nb">}</span>
+     <span class="k">\begin</span><span class="nb">{</span>column<span class="nb">}{</span>0.3<span class="k">\textwidth</span><span class="nb">}</span>
+       <span class="c">% Push them apart a little more.</span>
+     <span class="k">\end</span><span class="nb">{</span>column<span class="nb">}</span>
+     <span class="k">\begin</span><span class="nb">{</span>column<span class="nb">}{</span>0.4<span class="k">\textwidth</span><span class="nb">}</span>
+       <span class="k">\begin</span><span class="nb">{</span>figure<span class="nb">}</span>
+         <span class="k">\includegraphics</span><span class="na">[width=0.5\textwidth]</span><span class="nb">{</span>arm<span class="nb">_</span>logo<span class="nb">}</span>
+       <span class="k">\end</span><span class="nb">{</span>figure<span class="nb">}</span>
+     <span class="k">\end</span><span class="nb">{</span>column<span class="nb">}</span>
+   <span class="k">\end</span><span class="nb">{</span>columns<span class="nb">}</span>
+ <span class="k">\end</span><span class="nb">{</span>frame<span class="nb">}</span>
+
+ <span class="k">\bgroup</span>
+ <span class="k">\setbeamercolor</span><span class="nb">{</span>background canvas<span class="nb">}{</span>bg=black<span class="nb">}</span>
+ <span class="k">\begin</span><span class="nb">{</span>frame<span class="nb">}</span>[t,plain]<span class="nb">{}{}</span>
+   <span class="k">\begin</span><span class="nb">{</span>center<span class="nb">}</span>
+     <span class="nb">{</span><span class="k">\tiny</span> <span class="k">\textcolor</span><span class="nb">{</span>white<span class="nb">}{</span>The End<span class="nb">}}</span>
+   <span class="k">\end</span><span class="nb">{</span>center<span class="nb">}</span>
+ <span class="k">\end</span><span class="nb">{</span>frame<span class="nb">}</span>
+ <span class="k">\egroup</span>
+
+ <span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="make">
+<h2>Make<a class="headerlink" href="#make" title="Permalink to this headline">¶</a></h2>
+<div class="code makefile highlight-default notranslate"><div class="highlight"><pre><span></span>CPPFLAGS= -D_POSIX_C_SOURCE=200809L
+CFLAGS=-g3 -std=c99
+LDLIBS=-lxcb
+PROGS= xcb_query_keymap xcb_events xcb_modmap xcb_keyboard_grab
+
+.PHONY: all
+all: $(PROGS)
+
+.PHONY: clean
+clean:
+    $(RM) $(PROGS)
+</pre></div>
+</div>
+</div>
+<div class="section" id="shell">
+<h2>Shell<a class="headerlink" href="#shell" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="lisp">
+<h2>Lisp<a class="headerlink" href="#lisp" title="Permalink to this headline">¶</a></h2>
+<div class="code lisp highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">defparameter</span> <span class="o">*</span><span class="n">small</span><span class="o">*</span> <span class="mi">1</span><span class="p">)</span>
+<span class="p">(</span><span class="n">defparameter</span> <span class="o">*</span><span class="n">big</span><span class="o">*</span> <span class="mi">100</span><span class="p">)</span>
+
+<span class="p">(</span><span class="n">defun</span> <span class="n">guess</span><span class="o">-</span><span class="n">my</span><span class="o">-</span><span class="n">number</span> <span class="p">()</span>
+     <span class="p">(</span><span class="n">ash</span> <span class="p">(</span><span class="o">+</span> <span class="o">*</span><span class="n">small</span><span class="o">*</span> <span class="o">*</span><span class="n">big</span><span class="o">*</span><span class="p">)</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+
+<span class="p">(</span><span class="n">defun</span> <span class="n">smaller</span> <span class="p">()</span>
+     <span class="p">(</span><span class="n">setf</span> <span class="o">*</span><span class="n">big</span><span class="o">*</span> <span class="p">(</span><span class="mi">1</span><span class="o">-</span> <span class="p">(</span><span class="n">guess</span><span class="o">-</span><span class="n">my</span><span class="o">-</span><span class="n">number</span><span class="p">)))</span>
+     <span class="p">(</span><span class="n">guess</span><span class="o">-</span><span class="n">my</span><span class="o">-</span><span class="n">number</span><span class="p">))</span>
+
+<span class="p">(</span><span class="n">defun</span> <span class="n">bigger</span> <span class="p">()</span>
+     <span class="p">(</span><span class="n">setf</span> <span class="o">*</span><span class="n">small</span><span class="o">*</span> <span class="p">(</span><span class="mi">1</span><span class="o">+</span> <span class="p">(</span><span class="n">guess</span><span class="o">-</span><span class="n">my</span><span class="o">-</span><span class="n">number</span><span class="p">)))</span>
+     <span class="p">(</span><span class="n">guess</span><span class="o">-</span><span class="n">my</span><span class="o">-</span><span class="n">number</span><span class="p">))</span>
+
+<span class="p">(</span><span class="n">defun</span> <span class="n">start</span><span class="o">-</span><span class="n">over</span> <span class="p">()</span>
+   <span class="p">(</span><span class="n">defparameter</span> <span class="o">*</span><span class="n">small</span><span class="o">*</span> <span class="mi">1</span><span class="p">)</span>
+   <span class="p">(</span><span class="n">defparameter</span> <span class="o">*</span><span class="n">big</span><span class="o">*</span> <span class="mi">100</span><span class="p">)</span>
+   <span class="p">(</span><span class="n">guess</span><span class="o">-</span><span class="n">my</span><span class="o">-</span><span class="n">number</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="emacs-lisp">
+<h2>Emacs Lisp<a class="headerlink" href="#emacs-lisp" title="Permalink to this headline">¶</a></h2>
+<p>If it handled lisp okay, how does it handle the Emacs Lisp dialect? Or
+other dialects for that matter?</p>
+<div class="code elisp highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">defun</span> <span class="n">srt</span><span class="o">-</span><span class="n">renumber</span><span class="o">-</span><span class="n">file</span> <span class="p">()</span>
+<span class="s2">&quot;Re-number all lines in the current subrip subtitle file.&quot;</span>
+  <span class="p">(</span><span class="n">interactive</span><span class="p">)</span>
+  <span class="p">(</span><span class="n">save</span><span class="o">-</span><span class="n">excursion</span>
+    <span class="p">(</span><span class="n">goto</span><span class="o">-</span><span class="n">char</span> <span class="p">(</span><span class="n">point</span><span class="o">-</span><span class="nb">min</span><span class="p">))</span>
+    <span class="p">(</span><span class="n">let</span> <span class="p">((</span><span class="n">cnt</span> <span class="mi">0</span><span class="p">))</span>
+      <span class="p">(</span><span class="k">while</span> <span class="p">(</span><span class="n">search</span><span class="o">-</span><span class="n">forward</span><span class="o">-</span><span class="n">regexp</span> <span class="s2">&quot;^[0-9]+$&quot;</span><span class="p">)</span>
+        <span class="p">(</span><span class="n">replace</span><span class="o">-</span><span class="n">match</span> <span class="p">(</span><span class="n">number</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">string</span> <span class="p">(</span><span class="n">cl</span><span class="o">-</span><span class="n">incf</span> <span class="n">cnt</span><span class="p">)))))))</span>
+</pre></div>
+</div>
+<p>Does spelling affect it?</p>
+<div class="code emacs-lisp highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">defun</span> <span class="n">srt</span><span class="o">-</span><span class="n">renumber</span><span class="o">-</span><span class="n">file</span> <span class="p">()</span>
+<span class="s2">&quot;Re-number all lines in the current subrip subtitle file.&quot;</span>
+  <span class="p">(</span><span class="n">interactive</span><span class="p">)</span>
+  <span class="p">(</span><span class="n">save</span><span class="o">-</span><span class="n">excursion</span>
+    <span class="p">(</span><span class="n">goto</span><span class="o">-</span><span class="n">char</span> <span class="p">(</span><span class="n">point</span><span class="o">-</span><span class="nb">min</span><span class="p">))</span>
+    <span class="p">(</span><span class="n">let</span> <span class="p">((</span><span class="n">cnt</span> <span class="mi">0</span><span class="p">))</span>
+      <span class="p">(</span><span class="k">while</span> <span class="p">(</span><span class="n">search</span><span class="o">-</span><span class="n">forward</span><span class="o">-</span><span class="n">regexp</span> <span class="s2">&quot;^[0-9]+$&quot;</span><span class="p">)</span>
+        <span class="p">(</span><span class="n">replace</span><span class="o">-</span><span class="n">match</span> <span class="p">(</span><span class="n">number</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">string</span> <span class="p">(</span><span class="n">cl</span><span class="o">-</span><span class="n">incf</span> <span class="n">cnt</span><span class="p">)))))))</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="installation.html" class="btn btn-neutral" title="Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, TODO-Author.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'TODO',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
