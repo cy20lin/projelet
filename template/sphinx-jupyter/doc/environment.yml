@@ -1,0 +1,24 @@
+# Install a new environment:
+# conda env create -n sphinx -f environment.yml
+# conda env update -f environment.yml
+# conda remove --name sphinx --all
+
+channels:
+  - conda-forge
+dependencies:
+  - python>=3
+  - pandoc
+  - nbconvert!=5.4
+  - ipykernel
+  - ipython
+  # NOTE: jupyter_latex_env doesn't render in sphinx
+  # it only renders in jupyter notebook (browser)
+  # - jupyter_latex_env
+  # - nbextension
+  - pip:
+    - sphinx>=1.6
+    - nbsphinx
+    - sphinx_rtd_theme
+    - sphinx-autobuild
+    - recommonmark
+    - jupytext

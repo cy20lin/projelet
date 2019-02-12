@@ -1,0 +1,20 @@
+# Install in base environment
+# conda install --channel conda-forge --file conda-spec.txt
+#
+# Install in separated environment
+# See follow link for details,
+# https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html 
+# 
+# conda create --name sphinx --channel conda-forge --file conda-spec.txt
+# conda activate sphinx
+# conda deactivate sphinx
+# conda remove --name sphinx --all
+#
+
+sphinx
+nbsphinx
+ipython
+ipykernel
+sphinx_rtd_theme
+sphinx-autobuild
+recommonmark

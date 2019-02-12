@@ -1,0 +1,9 @@
+#jupyter
+#nbsphinx
+#ipython
+#ipykernel
+sphinx
+sphinx_rtd_theme
+sphinx-autobuild
+recommonmark
+jupytext
